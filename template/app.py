@@ -21,11 +21,9 @@ app = Flask(__name__,template_folder='template')
 
 # Model saved with Keras model.save()
 MODEL_PATH = 'D:/dogs-vs-cats-redux-kernels-edition/catsdogs.h5'
-
 # Load your trained model
 model = load_model(MODEL_PATH)
 # print('Model loaded. Start serving...')
-
 # You can also use pretrained model from Keras
 # Check https://keras.io/applications/
 #from keras.applications.resnet50 import ResNet50
