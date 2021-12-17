@@ -5,7 +5,6 @@ import os
 import glob
 import re
 import numpy as np
-
 from six import BytesIO
 
 # Keras
