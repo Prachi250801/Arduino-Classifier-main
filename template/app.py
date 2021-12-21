@@ -20,7 +20,7 @@ from gevent.pywsgi import WSGIServer
 app = Flask(__name__,template_folder='template')
 ################################################################
 ################################################################
-MODEL_PATH = 'D:\Downloads\Arduino-Classifier-main\Arduino-Classifier-main\Dogs-vs-Cats_model.h5'
+MODEL_PATH = 'Dogs-vs-Cats_model.h5'
 model = load_model(MODEL_PATH)
 def model_predict(img_path, model):
     img = image.load_img(img_path, target_size=(150, 150))
